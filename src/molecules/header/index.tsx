@@ -27,7 +27,6 @@ const Header: React.FC = () => {
   const [current, setCurrent] = useState("homepage");
 
   const onClick: MenuProps["onClick"] = (e) => {
-    console.log("click ", e);
     setCurrent(e.key);
   };
 
