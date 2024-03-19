@@ -1,6 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import { AppstoreOutlined, MailOutlined } from "@ant-design/icons";
+import {
+  AppstoreOutlined,
+  MailOutlined,
+  LoginOutlined,
+} from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Menu } from "antd";
 import Link from "next/link";
@@ -17,9 +21,14 @@ const items: MenuProps["items"] = [
     icon: <MailOutlined />,
   },
   {
-    label: <Link href="blogs">Manage Blogs</Link>,
+    label: <Link href="/blogs">Manage Blogs</Link>,
     key: "blogs",
     icon: <AppstoreOutlined />,
+  },
+  {
+    label: <Link href="/login">Login</Link>,
+    key: "login",
+    icon: <LoginOutlined />,
   },
 ];
 
